@@ -21,9 +21,7 @@ export const getAllPRsDetails = (): Promise<[PullRequest] | Error> => {
     });
 };
 
-
-export const getPRSummary = (prURL:string) =>{
-
+export const getPRSummary = (prURL: string) => {
   return fetch(prURL, {
     headers: {
       Accept: "application/vnd.github.v3+json",
@@ -39,4 +37,4 @@ export const getPRSummary = (prURL:string) =>{
       console.error(err.message);
       return Promise.resolve(err);
     });
-}
+};

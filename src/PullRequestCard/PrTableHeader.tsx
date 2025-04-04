@@ -22,21 +22,21 @@ const PrTableHeader = ({
         </Col>
 
         <Col className="d-flex align-items-center" xs={3}>
-        {filterSelectedLabel && 
-          <div
-            className="filter-bar"
-            aria-live="polite"
-            onClick={onClearFilter}
-          >
-            <button
-              className="clear-filter d-inline-block"
-              aria-label={`Clear filter for ${filterSelectedLabel}`}
+          {filterSelectedLabel && (
+            <div
+              className="filter-bar"
+              aria-live="polite"
+              onClick={onClearFilter}
             >
-              <span className="cross-icon">×</span>
-            </button>
-            <span className="btn btn-link"> Clear Filter</span>
-          </div>
-          }
+              <button
+                className="clear-filter d-inline-block"
+                aria-label={`Clear filter for ${filterSelectedLabel}`}
+              >
+                <span className="cross-icon">×</span>
+              </button>
+              <span className="btn btn-link"> Clear Filter</span>
+            </div>
+          )}
         </Col>
       </Row>
     </Container>

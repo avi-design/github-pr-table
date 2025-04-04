@@ -16,9 +16,6 @@ const PrTableRow = ({
     <div role="group">
       <Container className="border-bottom pb-1">
         <Row>
-          {/*  <Col>
-        <span className="pr-number" aria-label={`Pull request number ${pr.number}`}>#{pr.number}</span>
-        </Col> */}
           <Col>
             <h5>{pr.title}</h5>
           </Col>
@@ -41,9 +38,6 @@ const PrTableRow = ({
             <span>{pullDateFormat(pr.created_at) || "Invalid Date"}</span>
           </Col>
           <Col>
-            {/* <Button variant="primary" href={pr.url}>
-              Pull Request
-            </Button> */}
             <PRModalComponent prUrl={pr.url} />
           </Col>
         </Row>
