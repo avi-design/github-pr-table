@@ -14,7 +14,7 @@ const PrTableRow = ({
   setSelectedLabel,
 }: PrTableRowprops) => {
   return (
-    <div role="group">
+    <div role="group" key={pr.id} data-testid={`pr-row-${pr.id}`}>
       <Container className="border-bottom pb-1">
         <Row>
           <Col>

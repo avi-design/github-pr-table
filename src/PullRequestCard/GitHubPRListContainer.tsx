@@ -26,7 +26,7 @@ const GitHubPRListContainer = () => {
       if (!prResponse || !Array.isArray(prResponse)) {
         setError(prResponse.message || "Failed to fetch pull requests");
         console.log(prResponse);
-        throw new Error("Invalid response received from getAllPRs");
+        return;
       }
       console.log(prResponse);
       setPullRequests(prResponse);
