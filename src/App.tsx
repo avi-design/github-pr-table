@@ -1,6 +1,6 @@
 import React from 'react';
 import GitHubPRListContainer from "./PullRequestCard";
-import './App.css'; 
+
 const App = () => {
   return (
     <div className="App">
