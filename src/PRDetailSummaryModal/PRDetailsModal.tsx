@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import { getPRSummary } from "../service/getPrDetails";
 import { formatLastUpdatedTime } from "../utils/dateFormat";

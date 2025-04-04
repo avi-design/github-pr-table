@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import PrTableRow from "./PrTableRow";
 import PrTableHeader from "./PrTableHeader";
 import { getAllPRsDetails } from "../service/getPrDetails";
@@ -38,7 +38,6 @@ const GitHubPRListContainer = () => {
 
   return (
     <div>
-      <h2 className="mb-4">Git Pull Requests Table</h2>
       {loading ? (
         <Loader/>
       ) : error ? (

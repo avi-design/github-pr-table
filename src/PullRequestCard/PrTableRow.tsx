@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { pullDateFormat } from "../utils/dateFormat";
 import PRModalComponent from "../PRDetailSummaryModal/PRDetailsModal";
@@ -29,6 +30,7 @@ const PrTableRow = ({
                 style={{ backgroundColor: label.color, color: label.color }}
                 onClick={() => setSelectedLabel(label.name)}
                 aria-label={`Filter by label ${label.name}`}
+                data-testid={`label-${label.name}`}
               >
                 {label.name}
               </button>
