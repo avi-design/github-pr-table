@@ -1,13 +1,13 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import GitHubPRListContainer from './PullRequestCard';
-
-function App() {
+import React from 'react';
+import GitHubPRListContainer from "./PullRequestCard";
+import './App.css'; 
+const App = () => {
   return (
-    <div className="App"> 
-      <GitHubPRListContainer/>
+    <div className="App">
+       <h2 className="mb-4">Git Pull Requests Table</h2>
+      <GitHubPRListContainer />
     </div>
   );
-}
+};
 
 export default App;
