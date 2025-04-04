@@ -1,3 +1,4 @@
+import React from 'react';
 export interface PullRequest {
   id: number;
   title: string;
@@ -13,7 +14,7 @@ export interface PullRequest {
 export interface ModalDetails {
   updated_at: string;
   body: React.ReactNode;
-  title: React.ReactNode;
+  title: string;
 }
 
 export interface getPrDetailsType {
