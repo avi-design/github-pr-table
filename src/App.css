@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+
+button + button {
+  margin-left: 10px; /* Space between buttons */
+}
+
+.clear-filter {
+  background-color: transparent;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.clear-filter:hover {
+  background-color: #f2f2f2;
+  border-color: #888;
+}
+
+.clear-filter:active {
+  background-color: #ddd;
+}
+
+.cross-icon {
+  font-weight: bold;
+  font-size: 18px;
+}
