@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import PrTableRow from "./PrTableRow";
 import { Col, Container, Row } from "react-bootstrap";
 import { getAllPRsDetails } from "../service/getPrDetails";
-import { PullRequest } from "../types/types";
+import { PullRequestResponse } from "../types/types";
 import Loader from "../shared/loader";
 
 const GitHubPRList = () => {
-  const [pullRequestsData, setPullRequestsData] = useState<PullRequest[]>([]);
+  const [pullRequestsData, setPullRequestsData] = useState<PullRequestResponse[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [selectedLabel, setSelectedLabel] = useState<string | null>(null);
@@ -20,7 +20,7 @@ const GitHubPRList = () => {
           throw new Error("No response received from getAllPRs");
         }
         console.log(prResponse);
-        setPullRequestsData(prResponse as PullRequest[]);
+        setPullRequestsData(prResponse as PullRequestResponse[]);
       })
       .finally(() => {
         setLoading(false);

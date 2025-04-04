@@ -1,6 +1,6 @@
-import { PullRequest } from "../types/types";
+import { PullRequestResponse } from "../types/types";
 
-export const getAllPRsDetails = (): Promise<[PullRequest] | Error> => {
+export const getAllPRsDetails = (): Promise<[PullRequestResponse] | Error> => {
   const owner = "divvydose";
   const repo = "ui-coding-challenge";
 

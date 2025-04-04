@@ -1,5 +1,5 @@
 import React from 'react';
-export interface PullRequest {
+export interface PullRequestResponse {
   id: number;
   title: string;
   html_url: string;
@@ -9,6 +9,7 @@ export interface PullRequest {
   labels: {
     name: string;
   }[];
+  status:number
 }
 
 export interface ModalDetails {
